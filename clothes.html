@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothes - E-Commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cart">
+        <span id="cart-icon">🛒</span>
+        <span id="cart-count">0</span>
+    </div>
+    <div class="container">
+        <h1>Clothes Collection</h1>
+        <div class="products">
+            <div class="product" onclick="openProduct('https://example.com/clothing1.jpg', 'Clothing 1', 30)">
+                <img src="https://example.com/clothing1-thumbnail.jpg" alt="Clothing 1">
+                <button onclick="addToCart('Clothing 1', 30)">Add to Cart</button>
+                <p>Price: $30</p>
+            </div>
+            <div class="product" onclick="openProduct('https://example.com/clothing2.jpg', 'Clothing 2', 40)">
+                <img src="https://example.com/clothing2-thumbnail.jpg" alt="Clothing 2">
+                <button onclick="addToCart('Clothing 2', 40)">Add to Cart</button>
+                <p>Price: $40</p>
+            </div>
+            <!-- Add more products here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
